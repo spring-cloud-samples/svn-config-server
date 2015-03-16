@@ -1,0 +1,32 @@
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+*.sw?
+.#*
+*#
+*~
+
+# Build Artifacts
+
+.gradle/
+build/
+target/
+bin/
+
+# Eclipse Project Files
+
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA Files
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime
+
+*.sublime-*
