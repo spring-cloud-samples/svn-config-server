@@ -6,10 +6,14 @@ spring:
     config:
       server:
         svn:
-          uri: https://github.com/royclarkson/svn-config-server
-        git:
-          uri: https://github.com/pcf-guides/configuration-server-config-repo
+          uri: https://subversion.assembla.com/svn/spring-cloud-config-repo/
+        #git:
+        #  uri: https://github.com/pcf-guides/configuration-server-config-repo
+        default-label: trunk
+  profiles:
+    active: subversion
 
 logging:
   levels:
     org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.cloud.config.server: DEBUG
